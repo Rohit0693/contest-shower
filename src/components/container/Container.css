@@ -1,0 +1,14 @@
+.newcontainer{
+    margin-top: 5rem;
+}
+.nc{
+    margin-top: 4rem;
+}
+.fhead{
+    position: sticky;
+    top: 3.5rem;
+    background-color: white;
+}
+.zindex{
+    z-index: 1;
+}
