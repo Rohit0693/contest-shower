@@ -1,9 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import { Navbr } from '../../components/navbar/Navbar'
 import Table from 'react-bootstrap/Table';
 import { useEffect } from 'react';
-import { Footer } from '../../components/footer/Footer';
 
 export const HackerEarth=()=>{
     const [users, setUsers] = useState([])
@@ -19,17 +17,14 @@ export const HackerEarth=()=>{
     if(users.length===0){
         return(
           <div>
-            <Navbr/>
             <div className='container nc'>
                 <h1>Sorry! There is no contest listed on HackerEarth</h1>
             </div>
-            <Footer/>
             </div>
         )
     }
       return (
         <div>
-          <Navbr/>
           {users.length>0 && (
             <Table className='nc' striped bordered hover size="sm">
             <thead className='fhead'>
@@ -54,7 +49,6 @@ export const HackerEarth=()=>{
             </tbody>
           </Table>
           )}
-          <Footer/>
         </div>
       )
     }

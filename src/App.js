@@ -11,9 +11,12 @@ import { AtCoder } from "./pages/atcoder/AtCoder.jsx";
 import { TopCoder } from "./pages/topcoder/TopCoder.jsx";
 import { CSAcademy } from "./pages/csacademy/CSAcademy.jsx";
 import { KickStart } from "./pages/kickstart/KickStart.jsx";
+import { Navbr } from "./components/navbar/Navbar.jsx";
+import { Footer } from "./components/footer/Footer.jsx";
 function App() {
   return (
     <BrowserRouter>
+    <Navbr/>
     <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/all" element={<All/>}></Route>
@@ -28,6 +31,7 @@ function App() {
       <Route path="/top_coder" element={<TopCoder/>}></Route>
       <Route path="/cs_academy" element={<CSAcademy/>}></Route>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   );
 }

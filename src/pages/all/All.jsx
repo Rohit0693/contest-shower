@@ -1,10 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import { Navbr } from '../../components/navbar/Navbar'
 import Table from 'react-bootstrap/Table';
 import { useEffect } from 'react';
-import { Footer } from '../../components/footer/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const All=()=>{
     const [users, setUsers] = useState([])
@@ -20,7 +17,6 @@ export const All=()=>{
     console.log(users);
       return (
         <div className='nc'>
-            <Navbr/>
           {users.length>0 && (
             <Table striped bordered hover size="sm">
             <thead className='fhead'>
@@ -47,7 +43,6 @@ export const All=()=>{
             </tbody>
           </Table>
           )}
-          <Footer/>
         </div>
       )
     }
