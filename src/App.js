@@ -13,12 +13,14 @@ import { CSAcademy } from "./pages/csacademy/CSAcademy.jsx";
 import { KickStart } from "./pages/kickstart/KickStart.jsx";
 import { Navbr } from "./components/navbar/Navbar.jsx";
 import { Footer } from "./components/footer/Footer.jsx";
+import { About } from "./pages/about/About.jsx";
 function App() {
   return (
     <BrowserRouter>
     <Navbr/>
     <Routes>
       <Route path="/" element={<Home/>}></Route>
+      <Route path="/about" element={<About/>}></Route>
       <Route path="/all" element={<All/>}></Route>
       <Route path="/codeforces" element={<Codeforces/>}></Route>
       <Route path="/code_chef" element={<Codechef/>}></Route>

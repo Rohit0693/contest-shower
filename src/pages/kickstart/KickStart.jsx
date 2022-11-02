@@ -18,7 +18,7 @@ export const KickStart=()=>{
         return(
           <div>
             <div className='container nc'>
-                <h1>Sorry! There is no contest listed on KickStart</h1>
+                <h1>Loading...</h1>
             </div>
             </div>
         )

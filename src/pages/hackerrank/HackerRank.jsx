@@ -18,7 +18,7 @@ export const HackerRank=()=>{
         return(
           <div>
             <div className='container nc'>
-                <h1>Sorry! There is no contest listed on HackerRank</h1>
+            <h1>Loading...</h1>
             </div>
             </div>
         )

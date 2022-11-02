@@ -19,7 +19,7 @@ export const Codechef=()=>{
         return(
           <div>
             <div className='container nc'>
-                <h1>Sorry! There is no contest listed on Codechef</h1>
+            <h1>Loading...</h1>
             </div>
             </div>
         )

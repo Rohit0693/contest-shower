@@ -18,7 +18,7 @@ export const LeetCode=()=>{
         return(
           <div>
             <div className='container nc'>
-                <h1>Sorry! There is no contest listed on LeetCode</h1>
+            <h1>Loading...</h1>
             </div>
             </div>
         )
